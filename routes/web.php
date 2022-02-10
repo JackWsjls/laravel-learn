@@ -25,6 +25,7 @@ Route::get('/', function () {
 //Route::match(['get', 'post'], '/home/hello', 'HomeController@hello')->middleware(\App\Http\Middleware\Benchmark::class);
 Route::match(['get', 'post'], '/home/hello', 'HomeController@hello');
 Route::match(['get', 'post'], '/home/hello2', 'HomeController@hello2');
+Route::match(['get', 'post'], '/home/dbTest1', 'HomeController@dbTest1');
 //    ->middleware('benchmark');
 
 // 支持重定向 301 永久重定向 302 临时重定向

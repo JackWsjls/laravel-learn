@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use App\Http\Middleware\Benchmark;
 use Illuminate\Http\Request;
 
@@ -40,6 +41,19 @@ class HomeController extends Controller{
 
     public function getUser(Request $request) {
         return $request->input('id');
+    }
+
+    /**
+     * 1
+     */
+    public function dbTest()
+    {
+        DB::select('select * from user');
+    }
+
+    public function dbTest1()
+    {
+        DB::select('select * from user');
     }
 
 }
