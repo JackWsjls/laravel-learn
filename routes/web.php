@@ -22,7 +22,10 @@ Route::get('/', function () {
 //Route::delete('/home/hello', 'HomeController@hello');
 //Route::put('/home/hello', 'HomeController@hello');
 //Route::any('/home/hello', 'HomeController@hello'); // 支持任意
+//Route::match(['get', 'post'], '/home/hello', 'HomeController@hello')->middleware(\App\Http\Middleware\Benchmark::class);
 Route::match(['get', 'post'], '/home/hello', 'HomeController@hello');
+Route::match(['get', 'post'], '/home/hello2', 'HomeController@hello2');
+//    ->middleware('benchmark');
 
 // 支持重定向 301 永久重定向 302 临时重定向
 // 搜索引擎SEO 302 收录的是定向之前的 301 是定向之后的
