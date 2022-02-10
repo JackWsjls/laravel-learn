@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="94d06483-6eb4-4132-9075-57f17a39bfdd" name="laravel-learn" url="http://wsjls.test/">
-        <fileTransfer rootFolder="/home/www/mooc/laravel-learn" accessType="SFTP" host="114.115.247.150" port="22" sshConfigId="acb6c14c-256b-4bd4-b6c5-28a09d317da2" sshConfig="root@114.115.247.150:22 key" keyPair="true">
+        <fileTransfer rootFolder="/home/www/mooc/laravel-learn" accessType="SFTP" sshConfigId="c10076bb-7c3d-4fd9-ab0c-d52fd5e52be3" sshConfig="root@114.115.247.150:22 key">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
