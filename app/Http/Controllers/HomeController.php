@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
+//use Illuminate\Support\Facades\DB;
 use App\Http\Middleware\Benchmark;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller{
 
@@ -48,14 +49,9 @@ class HomeController extends Controller{
      */
     public function dbTest()
     {
-        DB::select('select * from user');
+        return DB::select('select * from user');
+//        return 111;
     }
-
-    public function dbTest1()
-    {
-        DB::select('select * from user');
-    }
-
 }
 
 
