@@ -49,8 +49,9 @@ class HomeController extends Controller{
      */
     public function dbTest()
     {
-        return DB::select('select * from user');
-//        return 111;
+//        return DB::select('select * from users');
+            $users = DB::select('select * from users');
+            dd($users[0]->name); // dd调试用函数，会终端请求
     }
 }
 
