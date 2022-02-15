@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+//use Illuminate\Support\Facades\DB;
 use App\Http\Middleware\Benchmark;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller{
 
@@ -42,6 +44,14 @@ class HomeController extends Controller{
         return $request->input('id');
     }
 
+    /**
+     * 1
+     */
+    public function dbTest()
+    {
+        return DB::select('select * from user');
+//        return 111;
+    }
 }
 
 
